@@ -1,4 +1,4 @@
-![https://github.com/Poyamohamadi/Python_Kivy_Round_Robin/blob/main/Kivy_Round_Robin.gif]
+![](https://github.com/Poyamohamadi/Python_Kivy_Round_Robin/blob/main/Kivy_Round_Robin.gif)
 ### **Project Description**
 
 This project is a Python-based application that implements the **Round Robin Scheduling Algorithm** with a user-friendly graphical interface built using the Kivy library. The program allows users to input process details, arrival times, burst times, and a time quantum, and then calculates key metrics such as average waiting time, average turnaround time, and the scheduling sequence.
