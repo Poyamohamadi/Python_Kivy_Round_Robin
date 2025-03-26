@@ -81,6 +81,3 @@ This project is a Python-based application that implements the **Round Robin Sch
 - زمان بازگشت میانگین: `Y.YY`
 - تعداد تعویض‌های زمینه: `Z`
 
----
-
-با این توضیحات، کاربران می‌توانند به راحتی با این برنامه کار کنند و نتایج دقیقی از الگوریتم Round Robin دریافت کنند.
