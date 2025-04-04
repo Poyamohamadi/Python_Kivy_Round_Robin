@@ -1,83 +1,129 @@
-![](https://github.com/Poyamohamadi/Python_Kivy_Round_Robin/blob/main/Kivy_Round_Robin.gif)
-### **Project Description**
+# Round Robin Scheduling App
 
-This project is a Python-based application that implements the **Round Robin Scheduling Algorithm** with a user-friendly graphical interface built using the Kivy library. The program allows users to input process details, arrival times, burst times, and a time quantum, and then calculates key metrics such as average waiting time, average turnaround time, and the scheduling sequence.
-
-#### **Key Features:**
-1. **Round Robin Scheduling Algorithm:**
-   - Implements the Round Robin algorithm, a widely used CPU scheduling method in operating systems.
-   - Users can specify the time quantum (`quantum`) for process execution.
-
-2. **Performance Metrics Calculation:**
-   - Computes **waiting time** and **turnaround time** for each process.
-   - Calculates the **average waiting time** and **average turnaround time** across all processes.
-
-3. **Scheduling Sequence:**
-   - Generates a detailed schedule showing the order of process execution.
-
-4. **Context Switch Count:**
-   - Calculates and displays the total number of context switches during the scheduling process.
-
-5. **Graphical User Interface (GUI) with Kivy:**
-   - Provides an intuitive GUI for users to input data and view results.
-   - Input fields for processes, arrival times, burst times, and quantum.
-   - Buttons and labels for executing the algorithm and displaying results.
-   - 
----
-
-#### **Example Input and Output**
-
-**Input:**
-- Processes: `["P1", "P2", "P3"]`
-- Arrival Times: `[0, 1, 2]`
-- Burst Times: `[5, 4, 2]`
-- Quantum: `3`
-
-**Output:**
-- Schedule: `["P1", "P2", "P3", "P1", "P2"]`
-- Average Waiting Time: `X.XX`
-- Average Turnaround Time: `Y.YY`
-- Context Switches: `Z`
+A Kivy-based application to simulate the **Round Robin CPU Scheduling Algorithm**. This app allows users to input the number of processes, their arrival times, burst times, and the time quantum, and then calculates the scheduling order, average waiting time, average turnaround time, and context switches.
 
 ---
 
-### **توضیحات پروژه**
+## Table of Contents
 
-این پروژه شامل یک برنامه به زبان پایتون است که الگوریتم زمان‌بندی **Round Robin** را پیاده‌سازی می‌کند و از کتابخانه **Kivy** برای ایجاد رابط کاربری گرافیکی استفاده می‌کند. این برنامه به کاربر اجازه می‌دهد تا جزئیات فرآیندها، زمان‌های ورود، زمان‌های اجرا و مقدار کوانتوم زمان را وارد کند و سپس معیارهای کلیدی مانند زمان انتظار میانگین، زمان بازگشت میانگین و ترتیب اجرای فرآیندها را محاسبه کند.
-
-#### **ویژگی‌های اصلی:**
-۱. **الگوریتم Round Robin:**
-   - پیاده‌سازی الگوریتم Round Robin، یکی از روش‌های معروف زمان‌بندی در سیستم‌عامل‌ها.
-   - کاربر می‌تواند مقدار کوانتوم زمان (`quantum`) را مشخص کند.
-
-۲. **محاسبه معیارهای عملکرد:**
-   - محاسبه **زمان انتظار** و **زمان بازگشت** برای هر فرآیند.
-   - محاسبه **زمان انتظار میانگین** و **زمان بازگشت میانگین** برای تمام فرآیندها.
-
-۳. **ترتیب اجرای فرآیندها:**
-   - تولید جدولی که ترتیب اجرای فرآیندها را نشان می‌دهد.
-
-۴. **تعداد تعویض زمینه:**
-   - محاسبه و نمایش تعداد تعویض‌های زمینه در طول زمان‌بندی.
-
-۵. **رابط کاربری گرافیکی با Kivy:**
-   - ارائه یک رابط کاربری شهودی برای ورود داده‌ها و مشاهده نتایج.
-   - فیلدهای ورودی متن برای نام فرآیندها، زمان‌های ورود، زمان‌های اجرا و کوانتوم زمان.
-   - دکمه‌ها و برچسب‌ها برای اجرای الگوریتم و نمایش نتایج.
+1. [Features](#features)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [Structure](#structure)
+5. [Dependencies](#dependencies)
+6. [Contributing](#contributing)
+7. [License](#license)
 
 ---
 
-#### **مثال ورودی و خروجی**
+## Program Demo 
 
-**ورودی:**
-- فرآیندها: `["P1", "P2", "P3"]`
-- زمان‌های ورود: `[0, 1, 2]`
-- زمان‌های اجرا: `[5, 4, 2]`
-- کوانتوم: `3`
+![Round Robin](https://github.com/Poyamohamadi/Round_Robin/blob/main/demo.gif)
 
-**خروجی:**
-- ترتیب اجرا: `["P1", "P2", "P3", "P1", "P2"]`
-- زمان انتظار میانگین: `X.XX`
-- زمان بازگشت میانگین: `Y.YY`
-- تعداد تعویض‌های زمینه: `Z`
+---
 
+## Features
+
+- **Dynamic Process Input**: Users can specify the number of processes dynamically.
+- **Interactive UI**: Built with Kivy, providing an intuitive and responsive user interface.
+- **Round Robin Scheduling**: Implements the Round Robin algorithm to calculate:
+  - Scheduling order
+  - Average waiting time
+  - Average turnaround time
+  - Number of context switches
+- **Validation**: Ensures all inputs are valid before proceeding to the next step.
+- **Visualization**: Displays the scheduling order in a clear and visually appealing format.
+
+---
+
+## Installation
+
+To run this application locally, follow these steps:
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/Poyamohamadi/Round_Robin.git
+   cd Round_Robin
+   ```
+
+2. **Run the Application**:
+   ```bash
+   python main.py
+   ```
+
+---
+
+## Usage
+
+1. **Enter the Number of Processes**:
+   - On the first screen, input the number of processes you want to simulate.
+
+2. **Input Arrival Times**:
+   - Enter the arrival times for each process.
+
+3. **Input Burst Times**:
+   - Specify the burst times for each process.
+
+4. **Set the Time Quantum**:
+   - Provide the time quantum value for the Round Robin algorithm.
+
+5. **View Results**:
+   - The app will display the scheduling order, average waiting time, average turnaround time, and the number of context switches.
+
+---
+
+## Structure
+
+The application is organized into the following classes and screens:
+
+- **ManagerScreen**: Manages transitions between different screens.
+- **NumProcesses**: Allows users to input the number of processes.
+- **Processes**: Collects arrival times for each process.
+- **RequestTimes**: Collects burst times for each process.
+- **Quantum**: Accepts the time quantum value and displays results.
+- **Result**: Displays the final output of the Round Robin algorithm.
+
+The `round_robin` function implements the core logic of the Round Robin scheduling algorithm.
+
+---
+
+## Dependencies
+
+- **Python 3.8+**: The application is written in Python and requires version 3.8 or higher.
+- **Kivy**: A Python framework for developing multitouch applications.
+
+---
+
+## Contributing
+
+Contributions are welcome! If you'd like to improve this project, feel free to:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Commit your changes and push them to your fork.
+4. Submit a pull request detailing your changes.
+
+Please ensure your code adheres to the existing style and includes appropriate documentation.
+
+---
+
+## License
+
+This project is licensed under the **MIT License**. See the [LICENSE](https://github.com/Poyamohamadi/Round_Robin/blob/main/LICENSE.md) file for details.
+
+---
+
+## Acknowledgments
+
+- **Kivy Framework**: Thanks to the Kivy team for providing an excellent framework for building cross-platform applications.
+- **Python Community**: Special thanks to the Python community for their support and resources.
+
+---
+
+For questions or feedback, feel free to reach out:
+
+- **GitHub**: [Poyamohamadi](https://github.com/Poyamohamadi)
+
+---
+
+Thank you for using **Round Robin**! 😊
