@@ -1,5 +1,3 @@
-from kivy.uix.effectwidget import Rectangle
-from kivy.uix.behaviors.touchripple import Color
 from kivy.uix.actionbar import Button
 from kivy.uix.dropdown import ScrollView
 from kivy.uix.filechooser import Screen
