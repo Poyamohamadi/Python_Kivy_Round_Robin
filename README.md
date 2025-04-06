@@ -126,4 +126,4 @@ For questions or feedback, feel free to reach out:
 
 ---
 
-Thank you for using **Round Robin**! 😊
+Thank you for using **Round Robin Scheduling App**! 😊
